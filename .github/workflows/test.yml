@@ -14,9 +14,4 @@ jobs:
         uses: actions/checkout@v4
       - name: echo workflow command
         run: |
-          echo "::error file=aria_role.tsx,line=1::⚠ eslint-plugin-jsx-a11y(aria-role): Elements with ARIA roles must use a valid, non-abstract ARIA role."
-          echo "::error file=aria_role.tsx,line=1::╭─[aria_role.tsx:1:11]"
-          echo "::error file=aria_role.tsx,line=1::1 │ <div role='foobar' />"
-          echo "::error file=aria_role.tsx,line=1::·           ────────"
-          echo "::error file=aria_role.tsx,line=1::╰────"
-          echo "::error file=aria_role.tsx,line=1::help: Set a valid, non-abstract ARIA role for element with ARIA, `foobar` is an invalid aria role"
+          echo "::error file=aria_role.tsx,line=1,endLine=1,col=11,endColumn=19::⚠ eslint-plugin-jsx-a11y(aria-role): Elements with ARIA roles must use a valid, non-abstract ARIA role."
