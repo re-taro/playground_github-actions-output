@@ -1,1 +1,2 @@
 <div role="foobar" />;
+<div />;
